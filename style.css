@@ -43,26 +43,30 @@
     justify-content: space-around;
     padding: 50px;
     background-color:white;
-
+    height: 400px;
 }
 .section {
     background-color: #e98300;
     padding:20px;
     background-size: cover;
+    
 }
 
 .about {
     background: rgba(0, 0, 0, 0.7);
     max-width:50%;
+    padding:20px;
 }
 
 .aboutme {
     color: white;
     text-align: center;
+    
 }
 
 .aboutext {
     color: white;
+    font-size: 18px;
 }
 .aboutext:hover {
     color: #e98300;
