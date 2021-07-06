@@ -1,4 +1,5 @@
 function startTime() {
+    
     const today = new Date();
     let h = today.getHours();
     let m = today.getMinutes();
@@ -6,8 +7,9 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     var time = h + ":" + m + ":" + s;
-    $(".time").text(time);
+    document.getElementById("time").innerHTML = time;
     setTimeout(startTime, 1000);
+    console.log(time);
 }
 
 function checkTime(i) {

@@ -1,7 +1,6 @@
 .header {
     display: flex;
     justify-content: space-around;
-    border: 1px solid gold;
     background-color: black;
 	
 
@@ -22,7 +21,7 @@
 .logo {
     width: 70px;
     height: 50px;
-    background: red;
+    background: whitesmoke;
     position: relative;
     animation: mymove 2s infinite;
     margin: 10px;
@@ -47,14 +46,14 @@
 
 }
 .section {
-    background-image: url("https://wallpaperaccess.com/full/3766724.jpg");
-    background-repeat: no-repeat;
+    background-color: #e98300;
     padding:20px;
     background-size: cover;
 }
 
 .about {
     background: rgba(0, 0, 0, 0.7);
+    max-width:50%;
 }
 
 .aboutme {
@@ -65,7 +64,10 @@
 .aboutext {
     color: white;
 }
-
+.aboutext:hover {
+    color: #e98300;
+    transition: ease-in-out .4s;
+}
 .options:hover {
     color: black;
     background: white;
@@ -73,7 +75,7 @@
     transition: ease-out .5s;
 }
 .slide {
-    max-width: 100px;
+    max-width: 50%;
     padding: 20px;
     margin: 2px;
     max-height: 200px;
