@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-around;
     background-color: black;
-	
-
+	top:0px;
+    position: fixed;
+    width: 100%;
+    left:0px;
 }
 
 
@@ -62,7 +64,8 @@
     padding:20px;
     background-size: cover;
     border:2px solid black;
-    
+    width:auto;
+    margin-top: auto;
 }
 
 .about {
@@ -107,6 +110,7 @@
     color: white;
     margin: 20px;
     padding: 5px;
+    border:2px white outset;
 }
 .footer{
     background:black;
@@ -114,6 +118,7 @@
     height:100px;
     position:relative;
     padding:35px;
+    width: auto;
 }
 .footer .footer-bottom{
     background:white;
