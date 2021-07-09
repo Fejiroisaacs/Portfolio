@@ -1,5 +1,4 @@
 function startTime() {
-    
     const today = new Date();
     let h = today.getHours();
     let m = today.getMinutes();
@@ -7,9 +6,8 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     var time = h + ":" + m + ":" + s;
-    document.getElementById("time").innerHTML = time;
+    $(".time").text(time);
     setTimeout(startTime, 1000);
-    console.log(time);
 }
 
 function checkTime(i) {
@@ -17,4 +15,21 @@ function checkTime(i) {
         i = "0" + i;
     } // add zero in front of numbers < 10
     return i;
+}
+$(document).ready(function() {
+
+$(".change").click(function(){
+    var outerColor =$("#outer-color").val() ;
+    var innerColor =$("#inner-color").val() ;
+    var textCOlor =$("#text-color").val();
+    var fontsize =$("#fontsize").val();
+    theme(outerColor, innerColor, textCOlor, fontsize);
+});
+});
+
+function theme(outer, inner, text, font){
+    $(".section").css("background-color", outer);
+    $(".innersection").css("background-color", inner);
+    $("p,h1").css("color",text);
+    $("p").css("font-size", font + "px");
 }

@@ -6,6 +6,7 @@
 
 }
 
+
 .options {
     max-height: 30px;
     color: white;
@@ -17,7 +18,17 @@
     border-style: outset;
     cursor: pointer;
 }
-
+.change{
+    background-color: transparent;
+    border-style: outset;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    margin-left: 15px;
+    height:30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .logo {
     width: 70px;
     height: 50px;
@@ -43,12 +54,14 @@
     justify-content: space-around;
     padding: 50px;
     background-color:white;
-    height: 400px;
+    height: 600px;
+    min-height: 100%
 }
 .section {
     background-color: #e98300;
     padding:20px;
     background-size: cover;
+    border:2px solid black;
     
 }
 
@@ -72,11 +85,15 @@
     color: #e98300;
     transition: ease-in-out .4s;
 }
-.options:hover {
+.options:hover, .change:hover {
     color: black;
     background: white;
     box-shadow: 0 0 5px white;
     transition: ease-out .5s;
+}
+#active{
+    color:black;
+    background: white;
 }
 .slide {
     max-width: 50%;
@@ -96,6 +113,7 @@
     color:white;
     height:100px;
     position:relative;
+    padding:35px;
 }
 .footer .footer-bottom{
     background:white;
@@ -108,13 +126,54 @@
     left:0px;
     padding-top:15px;
 }
+html {
+    min-height: 100%
+  }
 
+  .footer-content{
+      margin:5px;
+      padding:5px;
+      display: flex;
+      justify-content: center;
+      margin-top: -15px;
+      margin-bottom: auto;
+  }
+.footer-social{
+  margin: auto;
+  font-size: 34px;
+  text-align: center;
+  
+}
 
-
-
-
-
-
-
-
-
+.fa{
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 50px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.edit{
+    display: block;
+    border:outset;
+    border-radius: 10%;
+    padding: 5px;
+    margin:2px;
+}
+ #facebook:hover{
+	background: #3b5998;
+    margin-top: 5px;
+}
+ #instagram:hover{
+	background:linear-gradient(to top right, orange, red, purple);
+    margin-top: 5px;
+}
+ #twitter:hover{
+	background: #4c82f5;
+    margin-top: 5px;
+}
+ #whatsapp:hover{
+	background: #1ce45f;
+    margin-top: 5px;
+}
