@@ -17,21 +17,19 @@ function checkTime(i) {
     } // adds zero in front of numbers less than 10
     return i;
 }
-$(document).ready(function() {
 
+$(document).ready(function() {
 $(".change").click(function(){
     var outerColor =$("#outer-color").val() ;
-    var innerColor =$("#inner-color").val() ;
     var textCOlor =$("#text-color").val();
     var fontsize =$("#fontsize").val();
     var hoverColor=$("#hover-color").val();
-    theme(outerColor, innerColor, textCOlor, fontsize, hoverColor);
+    theme(outerColor, textCOlor, fontsize, hoverColor);
 });
 });
 
-function theme(outer, inner, text, font, hover){
+function theme(outer, text, font, hover){
     $(".section").css("background-color", outer);
-    $(".innersection").css("background-color", inner);
     $("p,h1").css("color",text);
     $("p").css("font-size", font + "px");
     $("p").hover(function(){
@@ -40,3 +38,8 @@ function theme(outer, inner, text, font, hover){
         $("p").css("color", text);
       });      
 }
+window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })

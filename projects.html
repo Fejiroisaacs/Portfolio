@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio </title>
+        <title> Fejiro Isaacs </title>
+        <link rel="shortcut icon" href="https://i.imgur.com/ncxH52q.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        
     </head>
 
     <body onload="startTime()">
+        <header>
         <div class="header">
 
 
-            <img class="logo" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+            <img class="logo" src="https://i.imgur.com/ncxH52q.jpg">
 
             <div class="menuoptions">
                 <a href="index.html"><button class="options">Home</button></a>
-                <a href="projects.html"><button id="active" class="options">Projects</button></a>
+                <a href="projects.html"><button id="active"  class="options">Projects</button></a>
                 <a href="topics.html"><button class="options">Topics</button></a>
                 <a href="contact.html"><button class="options">Contact</button></a>
             </div>
             <div> <p class="time" id="time"> </p></div>
         </div>
-        <div class="section">
+        </header>
+        <div class="section" class="animate">
+            <div class="middle">
 <div class="innersection">
-            
-            
+    
+          
+            <div class="photoFrame">
+                <img class="slide" src="https://i.imgur.com/ncxH52q.jpg">
+                <p class="photoDescription">This is me, Isaacs</p>
+            </div>
+            <div class="photoFrame">
+                <img class="slide" src="https://i.imgur.com/ncxH52q.jpg">
+                <p class="photoDescription">This is me, Isaacs</p>
+            </div>
+            <div class="photoFrame">
+                <img class="slide" src="https://i.imgur.com/ncxH52q.jpg">
+                <p class="photoDescription">This is me, Isaacs</p>
+            </div>
+            <div class="photoFrame">
+                <img class="slide" src="https://i.imgur.com/ncxH52q.jpg">
+                <p class="photoDescription">This is me, Isaacs</p>
+            </div>
+            <div class="photoFrame">
+                <img class="slide" src="https://i.imgur.com/ncxH52q.jpg">
+                <p class="photoDescription">This is me, Isaacs</p>
+            </div>
         </div>
+
         </div>
         
+    </div>
      
         
         
         <div class="footer">
             <div class="footer-content">
-                
-                
-                
+              <input class="edit" id="text-color" type="text" placeholder="Enter main text color"> 
+              <input class="edit" id="hover-color" type="text" placeholder="Enter text hover color"> 
+              <input class="edit" id="inner-image" type="text" placeholder="Enter Image Url">  
+              <input class="edit" id="outer-color" type="text" placeholder="Outer background color">                
+              <input class="edit" id="fontsize" type="number" placeholder="Enter fontsize (number)">  
+              <button class="change">Change</button> 
             </div>
-        
+            <div class="footer-social">
+                <a id="facebook" href="#" class="fa fa-facebook"></a>
+                <a id="twitter" href="#" class="fa fa-twitter"></a>
+                <a id="whatsapp" href="#" class="fa fa-whatsapp"></a>
+                <a id="instagram" href="#" class="fa fa-instagram"></a>
+            </div>
             <div class="footer-bottom">
                 <em> &copy;  Designed by Oghenefejiro Isaacs Anigboro  @2021 </em>
             </div>
             
         
         </div>
-        
-    
     </body>
 
 
