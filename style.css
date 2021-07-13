@@ -356,11 +356,3 @@ fieldset:hover{
     margin-top: 20px;
 
 }
-@media only screen and  (max-width: 828px){
-      .middle {
-        margin: 0;
-        padding: 100px;
-        width: 200px;
-        
-    }
-}
