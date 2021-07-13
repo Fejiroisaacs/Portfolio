@@ -357,10 +357,10 @@ fieldset:hover{
 
 }
 @media only screen and  (max-width: 828px){
-    .innersection,  .middle {
+      .middle {
         margin: 0;
         padding: 100px;
-        width: auto;
-        background-color: red;
+        width: 200px;
+        
     }
 }
