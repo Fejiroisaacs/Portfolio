@@ -356,7 +356,7 @@ fieldset:hover{
     margin-top: 20px;
 
 }
-@media all and (max-width: 640px){
+@media all and (max-width: 828px){
     .innersection,  .middle {
         margin: 0;
         padding: 40px;
