@@ -357,7 +357,7 @@ fieldset:hover{
 
 }
 @media all and (max-width: 640px){
-    #site > .wrapper, #footer > .wrapper {
+    .innersection,  .middle {
         margin: 0;
         padding: 40px;
         width: auto;
