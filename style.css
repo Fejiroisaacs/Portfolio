@@ -359,7 +359,7 @@ fieldset:hover{
 @media all and (max-width: 828px){
     .innersection,  .middle {
         margin: 0;
-        padding: 40px;
+        padding: 100px;
         width: auto;
     }
 }
