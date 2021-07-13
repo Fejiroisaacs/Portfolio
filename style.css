@@ -124,7 +124,7 @@ header{
     }
 }
 .middle{
-    background: url("https://mail.google.com/mail/u/0?ui=2&ik=a1f5d18442&attid=0.1.1&permmsgid=msg-f:1704939695063342308&th=17a9299e97b69ce4&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-IHzG434rATmoIEn2Xd0VZcn4m1CMws2fPA1enroql-st8ZWGoATvPVyS5QON1c6ywU41h6yNSZa3Xes0xMqzBKNt_HdqvBA5ynU7Dnp4Tc1s_un43fBzpmZ0&disp=emb.jpg") center no-repeat;
+    background: url("background.jpg") center no-repeat;
     background-size: cover;
  
 }
