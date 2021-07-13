@@ -32,8 +32,39 @@
             <div class="middle">
                 
 <div class="innersection">
+    <fieldset>
+    <form action="https://formspree.io/f/xzbyaebq" method="POST">
+        <label for="name">Your Name: </label>
+        <input class="names"type="text" name="name" placeholder="ex. John" required>
+        <label for="email">Your Email: </label>
+        <input class="names"type="email" name="email" placeholder="ex. John@email.com" required><br>
+        <label for="message">Your message: </label><br>
+        <textarea class="message" type="textarea" name="message" placeholder="Type your message..." required></textarea><br>
+        <!-- radio button handle --> 
+
+        <label class="gender" for="gender">Gender:  </label>
+        <input type="radio" name="gender" value="male" id="genderMale" checked>
+        <label for="genderMale">Male </label>
+        <input type="radio" name="gender" value="female" id="genderFemale">
+        <label for="genderFemale">Female </label>
+        <input type="radio" name="gender" value="other" id="genderOther">
+        <label for="genderOther">Other </label><br>
+        <!-- select field handle --> 
+        <label for="rating">Rate your experience </label>
+        <select class="rate" name="rating">
+            
+            <option selected="true" disabled="disabled">Select an Option</option>
+            <option name="rate" value="Very Good">Very Good</option>
+            <option name="rate" value="Good">Good</option>
+            <option name="rate" value="Average">Average</option>
+            <option name="rate" value="Poor">Poor</option>
+            <option name="rate" value="Very Poor">Very Poor</option>
+        <select>
+        <button class="submitbtn" type="submit">Send</button>
+    </form>
+    <h3>Feel free to get in touch with me via email-fejiroisaac@gmail.com or text @ +1(765)-233-6358 </h3>
+    </fieldset>  
     
-           
         </div>
        
         </div>

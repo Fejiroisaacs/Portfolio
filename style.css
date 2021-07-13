@@ -23,6 +23,7 @@ header{
     color:#fff;
     text-align: center;
     padding: 20px;
+    margin-bottom: auto;
 }
 
 .options {
@@ -36,6 +37,7 @@ header{
     border-style: outset;
     cursor: pointer;
     position: relative;
+    width: auto;
 }
 
 .options::after{
@@ -84,6 +86,10 @@ header{
 }
  body{
     background-color: black;
+}
+.scrolling-active .time{
+    border:2px #E98300 outset;
+    color: #E98300;
 }
 
 /*Apply styles after scroll end*/
@@ -162,7 +168,7 @@ header{
     transition: ease-in-out .4s;
     margin-left: 5px;
 }
-.options:hover, .change:hover {
+.options:hover, .change:hover, .submitbtn:hover {
     color: black;
     background: white;
     box-shadow: 0 0 5px white;
@@ -299,3 +305,54 @@ html {
       opacity: 1;
     }
   }
+fieldset{
+    width: 50%;
+    height: auto;
+    padding:30px;
+    border: 4px solid #E98300;
+    background: rgba(0, 0, 0, 0.521);
+    color: #fff;
+    border-radius: 5%;
+    font-size: large;
+}
+fieldset:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.75), 0 10px 10px rgba(0,0,0,0.75);
+    transition: ease-in-out .5s;
+    margin-top: 5px;
+}
+.submitbtn{
+    background-color: transparent;
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    border-style: outset;
+    cursor: pointer;
+    position: relative;
+}
+.names{
+    height: 30px;
+    margin: 10px;
+}
+.message{
+    padding: 15px 5px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s ease;
+    height: 100px;
+    box-sizing: content-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+    max-height: 250px;
+}
+.rate{
+    width:22%;
+    margin: 5px;
+    border-radius: 5%;
+}
+.gender {
+    margin-top: 20px;
+
+}
