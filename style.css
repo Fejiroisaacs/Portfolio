@@ -306,7 +306,7 @@ html {
     }
   }
 fieldset{
-    width: 50%;
+    width: 60%;
     height: auto;
     padding:30px;
     border: 4px solid #E98300;
@@ -355,4 +355,11 @@ fieldset:hover{
 .gender {
     margin-top: 20px;
 
+}
+@media all and (max-width: 640px){
+    #site > .wrapper, #footer > .wrapper {
+        margin: 0;
+        padding: 40px;
+        width: auto;
+    }
 }
