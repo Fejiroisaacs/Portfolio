@@ -434,12 +434,21 @@ ul{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 200px) and (max-width: 1000px) {
     .about{
-        min-width:70%;
+        min-width:80%;
         margin: auto;
+        height: auto;
     }
     .photoFrame{
-        min-width:70%;
+        min-width:80%;
         margin: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+    }
+    .name{
+        font-size: medium;
     }
     .slide{
         min-width: auto;
