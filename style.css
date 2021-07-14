@@ -6,7 +6,6 @@
     position: fixed;
     width: 100%;
     left:0px;
-    max-width: 120rem;
     padding: 0 1.5rem;
 }
 
@@ -127,10 +126,10 @@ header{
 .middle{
     background: url("background.jpg") center no-repeat;
     background-size: cover;
+
  
 }
 .innersection{
-    
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -142,6 +141,8 @@ header{
     padding:15px;
     width:auto;
     margin-top: 70px;
+    margin-right: none;
+    margin-left: none;
 }
 
 .about {
@@ -238,10 +239,10 @@ header{
     bottom:0px;
     left:0px;
     padding-top:15px;
-    padding: 5px;
 }
 html {
-    min-height: 100%
+    min-height: 100%;
+
   }
 
   .footer-content{
