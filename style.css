@@ -433,41 +433,30 @@ ul{
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 400px) and (max-width: 1000px) {
-    
+    .about{
+        min-width:80%;margin: auto;
+    }
+    .slide{
+        min-width: auto;
+        margin: auto;
+    }
+    .innersection{
+        display: block;
+    }
     .menuoptions{
         display: none;
     }
     .openMenu{
         display: none;
     }
-    body{
-        width: 100%;
-        display: inline-block !important;
-    }
-    .slide{
-        width: auto;
-        height: auto;
-    }
-    .section{
-        width: 100%;
-    }
     .middle {
             background-image: url("mobileBackground.jpg");
-            background-size: cover;
-            width: 100%;
+            background-size: cover;     
     }
-        header{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
         .options{
             
             display: none;
         }
-        .middle{
-            margin: auto;
-    
-        }
+        
         
     }
