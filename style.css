@@ -84,22 +84,23 @@ header{
 .scrolling-active .sections{
     background-color: white;
 }
+
  body{
     background-color: black;
 }
+
 .scrolling-active .time{
     border:2px #E98300 outset;
     color: #E98300;
 }
 
-/*Apply styles after scroll end*/
 .change{
     background-color: transparent;
     border-style: outset;
     cursor: pointer;
     color: white;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 95px;
     height:30px;
     margin-top: auto;
     margin-bottom: auto;
@@ -139,7 +140,6 @@ header{
 .section {
     background-color: #E98300;
     padding:15px;
-    background-size: cover;
     width:auto;
     margin-top: 70px;
 }
@@ -271,8 +271,9 @@ html {
     display: block;
     border:outset;
     border-radius: 10%;
-    padding: 5px;
-    margin:2px;
+    margin: 35px;
+    padding: 10px;
+    margin-top: 10px;
 }
  #facebook:hover{
     background: #3b5998;
@@ -332,6 +333,7 @@ fieldset:hover{
 .names{
     height: 30px;
     margin: 10px;
+    width: auto;
 }
 .message{
     padding: 15px 5px;
@@ -356,3 +358,115 @@ fieldset:hover{
     margin-top: 20px;
 
 }
+::placeholder{
+    color:grey;
+    font-weight: bolder;
+}
+/*code from w3schools*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 55px;
+    right: 45px;
+    font-size: 50px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  /* End of copied and edited code from w3schools*/
+  .openMenu{
+      margin-left: -30px;
+  }
+
+ul{
+    list-style-type: none;
+}
+#option1{
+    margin-top: 100px;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+    
+    .menuoptions{
+        display: none;
+    }
+    .openMenu{
+        display: none;
+    }
+    body{
+        width: 100%;
+        display: inline-block !important;
+    }
+    .slide{
+        width: auto;
+        height: auto;
+    }
+    .section{
+        width: 100%;
+    }
+    .middle {
+            background-image: url("mobileBackground.jpg");
+            background-size: cover;
+            width: 100%;
+    }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .options{
+            
+            display: none;
+        }
+        .middle{
+            margin: auto;
+    
+        }
+        
+    }

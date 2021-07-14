@@ -9,6 +9,9 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        <script>
+            alert("Click the three dashed lines at the bottom left of the screen to change some styles on this website")
+        </script>
         
     </head>
 
@@ -50,28 +53,41 @@
      
         
         
-        <div class="footer">
-            <div class="footer-content">
-              <input class="edit" id="text-color" type="text" placeholder="Enter main text color"> 
-              <input class="edit" id="hover-color" type="text" placeholder="Enter text hover color"> 
-              <input class="edit" id="inner-image" type="text" placeholder="Enter Image Url">  
-              <input class="edit" id="outer-color" type="text" placeholder="Outer background color">                
-              <input class="edit" id="fontsize" type="number" placeholder="Enter fontsize (number)">  
-              <button class="change">Change</button> 
-            </div>
-            <div class="footer-social">
-                <a id="facebook" href="#" class="fa fa-facebook"></a>
-                <a id="twitter" href="#" class="fa fa-twitter"></a>
-                <a id="whatsapp" href="#" class="fa fa-whatsapp"></a>
-                <a id="instagram" href="#" class="fa fa-instagram"></a>
-            </div>
-            <div class="footer-bottom">
-                <em> &copy;  Designed by Oghenefejiro Isaacs Anigboro  @2021 </em>
-            </div>
-            
-        
+    <div class="footer">
+        <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+<!-- Button to close the overlay navigation -->
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<!-- Overlay content -->
+<div class="footer-content">
+<ul>
+    <li><input id="option1" class="edit" id="text-color" type="text" placeholder="Enter main text color"></li>
+    <li><input class="edit" id="hover-color" type="text" placeholder="Enter text hover color"></li>
+    <li><input class="edit" id="inner-image" type="text" placeholder="Enter Image Url"></li>  
+    <li><input class="edit" id="outer-color" type="text" placeholder="Outer background color"></li>                
+    <li><input class="edit" id="fontsize" type="number" placeholder="Enter fontsize (number)"></li>  
+    <button class="change">Change</button> 
+</ul>
+  </div>        
+
+</div>
+        <span class="openMenu" style="font-size:10px;cursor:pointer;color: #E98300;" onclick="openNav()">&#9776;</span>
+       
+        <div class="footer-social">
+            <a id="facebook" href="#" class="fa fa-facebook"></a>
+            <a id="twitter" href="#" class="fa fa-twitter"></a>
+            <a id="whatsapp" href="#" class="fa fa-whatsapp"></a>
+            <a id="instagram" href="#" class="fa fa-instagram"></a>
         </div>
-    </body>
+        <div class="footer-bottom">
+            <em> &copy;  Designed by Oghenefejiro Isaacs Anigboro  @2021 </em>
+        </div>
+        
+    
+    </div>
+</body>
 
 
 
