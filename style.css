@@ -432,9 +432,14 @@ ul{
     margin-top: 100px;
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 400px) and (max-width: 1000px) {
+@media only screen and (min-width: 200px) and (max-width: 1000px) {
     .about{
-        min-width:80%;margin: auto;
+        min-width:70%;
+        margin: auto;
+    }
+    .photoFrame{
+        min-width:70%;
+        margin: auto;
     }
     .slide{
         min-width: auto;
