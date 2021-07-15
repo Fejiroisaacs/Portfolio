@@ -26,6 +26,15 @@
                 <a href="contact.html"><button id="active" class="options">Contact</button></a>
             </div>
             <div> <p class="time" id="time"> </p></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtnMobile" onclick="closeMobileNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="topics.html">Topics</a>
+                <a href="contact.html" style="color: #E98300;">Contact</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer; color: #E98300;" class="openMenuMobile"onclick="openMobileNav()">&#9776;</span>
+               
         </div>
         </header>
         <div class="section" class="animate">
@@ -34,25 +43,26 @@
 <div class="innersection">
     <fieldset>
     <form action="https://formspree.io/f/xzbyaebq" method="POST">
-        <label for="name">Your Name: </label>
+        <label for="name">Name: </label>
         <input class="names"type="text" name="name" placeholder="ex. John" required>
-        <label for="email">Your Email: </label>
+        <label for="email">Email: </label>
         <input class="names"type="email" name="email" placeholder="ex. John@email.com" required><br>
         <label for="message">Subject: </label>  
         <input class="names"type="subject" name="subject" placeholder="subject" required><br>
-        <label for="subject">Your message: </label><br>
+        <label for="subject">Message: </label><br>
         <textarea class="message" type="textarea" name="message" placeholder="Type your message..." required></textarea><br>
         <!-- radio button handle --> 
 
-        <label class="gender" for="gender">Gender:  </label>
-        <input type="radio" name="gender" value="male" id="genderMale" checked>
-        <label for="genderMale">Male </label>
-        <input type="radio" name="gender" value="female" id="genderFemale">
-        <label for="genderFemale">Female </label>
-        <input type="radio" name="gender" value="other" id="genderOther">
-        <label for="genderOther">Other </label><br>
+        <label class="gender" for="feature">Rate a feature:  </label>
+        <input type="radio" name="feature" value="male" id="genderMale" checked>
+        <label for="genderMale">Very Good </label>
+        <input type="radio" name="feature" value="female" id="genderFemale">
+        <label for="genderFemale">Good </label>
+        <input type="radio" name="feature" value="other" id="genderOther">
+        <label for="genderOther">Irrelevant </label>
+        <input class="names"type="text" name="feature" placeholder="feature name"><br>
         <!-- select field handle --> 
-        <label for="rating">Rate your experience </label>
+        <label for="rating">Rate your overall experience </label>
         <select class="rate" name="rating">
             
             <option selected="true" disabled="disabled">Select an Option</option>
@@ -85,7 +95,7 @@
 <!-- Overlay content -->
 <div class="footer-content">
 <ul>
-    <li><input id="option1" class="edit" id="text-color" type="text" placeholder="Enter main text color"></li>
+    <li><input  class="edit option1" id="text-color" type="text" placeholder="Enter main text color"></li>
     <li><input class="edit" id="hover-color" type="text" placeholder="Enter text hover color"></li>
     <li><input class="edit" id="inner-image" type="text" placeholder="Enter Image Url"></li>  
     <li><input class="edit" id="outer-color" type="text" placeholder="Outer background color"></li>                
@@ -95,7 +105,7 @@
   </div>        
 
 </div>
-        <span class="openMenu" style="font-size:10px;cursor:pointer;color: #E98300;" onclick="openNav()">&#9776;</span>
+        <span class="openMenu" style="font-size:30px;cursor:pointer;color: #E98300;" onclick="openNav()">&#9776;</span>
        
         <div class="footer-social">
             <a id="facebook" href="#" class="fa fa-facebook"></a>

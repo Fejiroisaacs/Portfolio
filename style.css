@@ -8,7 +8,18 @@
     left:0px;
     padding: 0 1.5rem;
 }
-
+#mySidenav{
+    display: none;
+}
+.closebtnMobile{
+    display: none;
+}
+.sidenav{
+    display: none;
+}
+.openMenuMobile{
+    display: none;
+}
 header{
     width: 100%;
     position: fixed;
@@ -99,8 +110,10 @@ header{
     cursor: pointer;
     color: white;
     text-align: center;
-    margin-left: 95px;
-    height:30px;
+    margin-left: 115px;
+    height:40px;
+    width: 100px;
+    font-size: larger;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -123,6 +136,7 @@ header{
         left: 10%;
     }
 }
+
 .middle{
     background: url("background.jpg") center no-repeat;
     background-size: cover;
@@ -133,9 +147,10 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 50px;
-    height: 600px;
-    min-height: 100%
+    min-height: 600px;
+    max-height: auto;
 }
+
 .section {
     background-color: #E98300;
     padding:15px;
@@ -145,41 +160,71 @@ header{
     margin-left: none;
 }
 
+.citings{
+    background: rgba(0, 0, 0, 0.521);
+    width: 50%;
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 5%;
+    color: #fff;
+    font-size: large;
+}
+
+.citingsHeader{
+    text-align: center;
+}
+
+iframe{
+    max-width: 40%;
+    border: 2px solid #E98300;
+    border-radius: 5%;
+}
+
 .about {
-    background: rgba(0, 0, 0, 0.7);
     max-width:50%;
     padding:20px;
     box-shadow: grey;
+    width: 50%;
+    height: auto;
+    padding:30px;
+    border: 4px solid #E98300;
+    background: rgba(0, 0, 0, 0.521);
+    color: #fff;
+    border-radius: 5%;
+    font-size: large;
 }
-.about:hover{
-    margin-top: 5px;
-    transition: ease-in-out .5s;
-}
+
 .aboutme {
     color: white;
     text-align: center;   
+    font-size: 35px;
 }
 
 .aboutext {
     color: white;
-    font-size: 18px;
+    font-size: 23px;
 }
+
 .aboutext:hover {
     color: #e98300;
     transition: ease-in-out .4s;
     margin-left: 5px;
 }
+
 .options:hover, .change:hover, .submitbtn:hover {
     color: black;
     background: white;
     box-shadow: 0 0 5px white;
     transition: ease-in-out .5s;
 }
+
 #active{
     color:black;
     background: white;
 }
+
 .slide {
+    width: auto;
     max-width: 70%;
     padding: 20px;
     margin: 2px;
@@ -204,23 +249,27 @@ header{
     border:2px outset black;
     border-radius: 15px;
 }
+
 .photoDescription{
     font-size: 30px;
     text-align: center;
     color: whitesmoke;
     margin-top: 2px;
 }
+
 .photoFrame:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.75), 0 10px 10px rgba(0,0,0,0.75);
     transition: ease-in-out .5s;
     margin-top: 5px;
 }
+
 .time {
     color: white;
     margin: 20px;
     padding: 5px;
     border:2px white outset;
 }
+
 .footer{
     background:black;
     color:white;
@@ -229,6 +278,7 @@ header{
     padding:35px;
     width: auto;
 }
+
 .footer .footer-bottom{
     background:black;
     color:#E98300;
@@ -240,19 +290,21 @@ header{
     left:0px;
     padding-top:15px;
 }
+
 html {
     min-height: 100%;
 
-  }
+}
 
-  .footer-content{
+.footer-content{
       margin:5px;
       padding:5px;
       display: flex;
       justify-content: center;
       margin-top: -15px;
       margin-bottom: auto;
-  }
+}
+
 .footer-social{
     margin: auto;
     font-size: 34px;
@@ -273,8 +325,9 @@ html {
     border:outset;
     border-radius: 10%;
     margin: 35px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: larger;
 }
  #facebook:hover{
     background: #3b5998;
@@ -307,8 +360,18 @@ html {
       opacity: 1;
     }
   }
+  .heading{
+      color:#fff;
+      text-align: center;
+    font-size: 45px;
+      margin-top: auto;
+  }
+  .centralize{
+    padding-top: 9%;
+}
+
 fieldset{
-    width: 60%;
+    width: 50%;
     height: auto;
     padding:30px;
     border: 4px solid #E98300;
@@ -428,11 +491,78 @@ fieldset:hover{
 ul{
     list-style-type: none;
 }
-#option1{
+.option1{
     margin-top: 100px;
 }
+/*Code copied from weschools- how to make a side bar, partly edited by me*/
+.openMenuMobile{
+    margin-top: 13px;
+    margin-right: 20px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 200px) and (max-width: 1000px) {
+    .rate{
+        width: 150px;
+    }
+    fieldset{
+        width: 80%;
+        padding: 20px;
+        margin-left: -10px;
+    }
+    .gender{
+        font-size: medium;
+    }
+    #mySidenav{
+        display: block;
+    }
+    .closebtnMobile{
+        display: block;
+    }
+    .sidenav{
+        display: block;
+    }
+    .openMenuMobile{
+        display: block;
+    }
+    
     .about{
         min-width:80%;
         margin: auto;
@@ -444,8 +574,30 @@ ul{
         margin-bottom: 15px;
         position: relative;
     }
-    .photoFrame{
+    iframe{
         min-width:80%;
+        margin: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        min-height: 30%;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .citings{
+        min-width:80%;
+        margin: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+        position: relative;
+        min-height: auto;
+    }
+    .photoFrame{
+        min-width:auto;
         position: relative;
         margin: auto;
         display: block;
@@ -453,6 +605,7 @@ ul{
         margin-right: auto;
         max-width: 80%;
         height: auto;
+        margin-top: 15px;
     }
     .photoDescription{
         font-size: medium;
@@ -476,9 +629,6 @@ ul{
         display: block;
     }
     .menuoptions{
-        display: none;
-    }
-    .openMenu{
         display: none;
     }
     .middle {

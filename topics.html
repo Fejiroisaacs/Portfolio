@@ -5,6 +5,7 @@
         <link rel="shortcut icon" href="https://i.imgur.com/ncxH52q.jpg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="slide.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -27,17 +28,42 @@
             </div>
             
   
-  <!-- Use any element to open/show the overlay navigation menu -->
+
   
             <div> <p class="time" id="time"> </p></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtnMobile" onclick="closeMobileNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="topics.html" style="color: #E98300;">Topics</a>
+                <a href="contact.html">Contact</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer; color: #E98300;" class="openMenuMobile"onclick="openMobileNav()">&#9776;</span>
+               
             
         </div>
         </header>
         <div class="section" class="animate">
             <div class="middle">
 <div class="innersection">
-    
-           
+    <div class="rightTopics">
+
+
+    <iframe src="https://prezi.com/v/embed/oid92owcyyry/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="315" width="560"></iframe>
+
+    <p>Hi</p>
+
+
+    </div>
+
+    <div class="citings">
+        <h1 class="citingsHeader">Some learning sources</h1>
+        
+        <p>Use this <a style="color:#7BD0E4;" target="_blank" href="https://www.w3schools.com/howto/howto_js_sidenav.asp">W3schools link</a> to learn how to make a side navigation bar</p>
+
+        <p>If a Prezi video doesn't play or load, use <a style="color:#7BD0E4;" target="_blank" href="https://prezi.com/v/oid92owcyyry/">this</a> to view it</p>
+
+    </div>
         </div>
        
         </div>
@@ -56,7 +82,7 @@
 <!-- Overlay content -->
 <div class="footer-content">
 <ul>
-    <li><input id="option1" class="edit" id="text-color" type="text" placeholder="Enter main text color"></li>
+    <li><input  class="edit option1" id="text-color" type="text" placeholder="Enter main text color"></li>
     <li><input class="edit" id="hover-color" type="text" placeholder="Enter text hover color"></li>
     <li><input class="edit" id="inner-image" type="text" placeholder="Enter Image Url"></li>  
     <li><input class="edit" id="outer-color" type="text" placeholder="Outer background color"></li>                
@@ -66,7 +92,7 @@
   </div>        
 
 </div>
-        <span class="openMenu" style="font-size:10px;cursor:pointer;color: #E98300;" onclick="openNav()">&#9776;</span>
+        <span class="openMenu" style="font-size:30px;cursor:pointer;color: #E98300;" onclick="openNav()">&#9776;</span>
        
         <div class="footer-social">
             <a id="facebook" href="#" class="fa fa-facebook"></a>

@@ -30,7 +30,7 @@ $(".change").click(function(){
 
 function theme(outer, text, font, hover){
     $(".section").css("background-color", outer);
-    $("p,h1").css("color",text);
+    $("p").css("color", text);
     $("p").css("font-size", font + "px");
     $("p").hover(function(){
         $("p").css("color", hover);
@@ -43,6 +43,7 @@ window.addEventListener('scroll', function () {
             let windowPosition = window.scrollY > 0;
             header.classList.toggle('scrolling-active', windowPosition);
         })
+//w3schools code here
 /* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
@@ -52,3 +53,11 @@ function openNav() {
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
+  function openMobileNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeMobileNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  //end of w3schools code

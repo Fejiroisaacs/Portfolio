@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hidden Book</title>
+        <link rel="shortcut icon" href="https://i.imgur.com/y1OUtcB.jpg" type="image/x-icon">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="menu"> <img class="icon" src="https://i.imgur.com/y1OUtcB.jpg">
+
+
+            <div> <input class="search" type="text" placeholder="Enter background image url">
+                <button class="change">
+                    Change
+                </button>
+            </div>
+            <strong><button class="head">
+                    Home
+                </button>
+                <button class="head">
+                    Teams
+                </button>
+                <button class="head">
+                    Watch
+                </button>
+                <button class="head">
+                    Groups
+                </button>
+                <button class="head">
+                    Gaming
+                </button></strong>
+        </div>
+        <div class="sections">
+            <div class="options">
+                <div class="section1">
+                    <p class="options1"> Naruto Uzumaki</p>
+                    <p class="options1">Find Teams</p>
+                    <p class="options1">Events</p>
+                    <p class="options1">Memories </p>
+                    <p class="options1">Pages</p>
+                    <p class="options1">Saved</p>
+                    <div class="quotes">
+                        <a target="_blank" href="https://i.imgur.com/fCDM68m.jpg"> <img class="quotes" src="https://i.imgur.com/fCDM68m.jpg"></a>
+                        <a target="_blank" href="https://i.imgur.com/Y3HG1Li.jpg"><img class="quotes" src="https://i.imgur.com/Y3HG1Li.jpg"></a>
+                        <a target="_blank" href="https://i.imgur.com/9RF6Y7x.png"> <img class="quotes" src="https://i.imgur.com/9RF6Y7x.png"></a>
+                        <a target="_blank" href="https://i.imgur.com/5I1jYmY.jpg"> <img class="quotes" src="https://i.imgur.com/5I1jYmY.jpg"></a>
+                    </div>
+                </div>
+                <div class="section2">
+                    <p class="title">Hokages</p>
+                    <div class="preview">
+
+                        <img class="previewp" src="https://i.imgur.com/olxbRVx.png">
+                        <img class="previewp" src="https://i.imgur.com/mXWxdhf.jpg">
+                        <img class="previewp" src="https://i.imgur.com/841oNKE.png">
+                        <img class="previewp" src="https://i.imgur.com/wjzpeMi.png">
+                    </div>
+                    <div class="mind">
+                        <img class="icon" src="https://i.imgur.com/8TzkuLK.jpg">
+                        <input class="search2" type="text" placeholder="Whats on your mind Naruto?">
+                        <button class="postbtn">Post</button>
+                    </div>
+                    <div class="post"><img class="posts" src="https://i.imgur.com/3zum0ik.jpg">
+                        <p class="postext">TEAM 7, ALWAYS AND FOREVER</p>
+                    </div>
+                    <div class="opost"></div>
+                </div>
+                <div class="section1">
+                    <div class="final">
+                        <h2>Friends</h2>
+                        <p class="options1">Sasuke Uchiha</p>
+                        <p class="options1">Kakashi Hatake</p>
+                        <p class="options1">Sakura Haruno</p>
+                        <p class="options1">Gaara Kazekage</p>
+                        <p class="options1">Shikimaru Nara</p>
+                        <div class="otherpost">
+                            <h1>Other Posts</h1>
+                            <h3>Sasuke Uchiha</h3>
+                            <img class="previewp" src="https://i.imgur.com/HBOdITK.jpg">
+                            <h3>Hidden Leaf</h3>
+                            <img class="previewp" src="https://i.imgur.com/1pyXbdb.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="slogan">
+                <marquee><em>Believe It!</em></marquee>
+            </p>
+        </div>
+        <style>
+            .icon {
+    max-width: 70px;
+    max-height: 50px;
+    margin: 10px;
+    border-radius: 70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: #E98300;
+    border: 1px ridge silver;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+
+}
+
+.search {
+    max-height: 20px;
+    margin: 20px;
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.search2 {
+    max-height: 20px;
+    margin: 20px;
+    background-color: transparent;
+    border: 3px ridge #E98300;
+    color: #E98300;
+}
+
+.head, .change {
+    max-height: 30px;
+    color: white;
+    max-width: 60px;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border-style: outset;
+}
+
+.options1:hover,
+.head:hover,
+h1:hover {
+    background-color: orange;
+    max-width: 200px;
+}
+
+.options1 {
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+
+}
+
+.previewp {
+    max-width: 100px;
+    padding: 20px;
+    margin: 2px;
+    border: 3px ridge #E98300;
+}
+
+.mind {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.post {
+    border: 2px outset #E98300;
+    padding: 20px;
+    margin: 10px;
+}
+
+.otherpost {
+    border: 2px outset #E98300;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.posts {
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.postext {
+    text-align: center;
+    font-size: 25px;
+    color: #E98300;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+
+    max-width: 100%;
+}
+
+.sections {
+    background-image: url("https://i.imgur.com/n7Nxs8K.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.section1 {
+    background-color: #E98300;
+    height: 100%;
+    color: white;
+    border: 1px ridge silver;
+}
+
+.section2 {
+    background-color: #000000;
+    padding: 10px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.quotes {
+    max-width: 150px;
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+h3 {
+    color: white;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.slogan {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 15px;
+    color: #E98300;
+}
+
+.postbtn {
+    max-height: 30px;
+    color: #E98300;
+    width: 50px;
+
+    margin: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px outset #E98300;
+}
+
+.postbtn:hover {
+    background-color: orange;
+}
+
+.opost {
+    text-align: left;
+    color: #E98300;
+    margin: 10px;
+}
+        </style>
+        <script>
+            $(".postbtn").click(function() {
+    var post = $(".search2").val();
+    $(".opost").append("<p>" + "Naruto: " + post + "</p>");
+});
+
+$(".change").click(function() {
+    var photos = $(".search").val();
+    console.log(photos);
+    $(".sections").css("background-image", "url(" + photos + ")");
+    $(".sections").css("background-repeat", "no-repeat");
+    $(".sections").css("background-size", "cover");   
+});
+        </script>
+    </body>
+</html>

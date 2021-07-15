@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8.3 Compound Conditionals: Catapult Social Club</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1><strong>Catapult</strong> Social Club</h1>
+        <div class="login">
+            <h3>Log into your account</h3>
+            <p>Username:</p>
+            <input class="username">
+            <p>Password:</p>
+            <input class="password">
+            <button>Login</button>
+            <div class="message"></div>
+        </div>
+        <style>
+            body {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #e4a4ee;
+    font-weight: lighter;
+}
+
+.login {
+    width: 350px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgb(200,200,200);
+    border-top: 3px solid #0080ff;
+    padding: 30px 25px;
+}
+
+p {
+    color: #3f3b39;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    font-size: 16px;
+    padding: 10px 20px 8px;
+    margin-top: 20px;
+}
+.message{
+    margin:15px;
+}
+        </style>
+        <script>
+            // set the correct username and password combination below
+var correctUsername = "catapult1";
+var correctPassword = "IamAcatapult$";
+
+
+$("button").click(function() {
+    var username = $(".username").val();
+    var password = $(".password").val();
+    
+    // WRITE YOUR COMPOUND CONDITIONAL BELOW THIS LINE
+ if (username === correctUsername && password === correctPassword){
+    
+     $(".message").text("You have successfully logged in");
+     $(".username").css("color","green");
+     $(".password").css("color","green");
+     alert("You have successfully logged in");
+ } else if ( username === correctUsername && password !== correctPassword){
+     alert("wrong password");
+     $(".message").text("wrong password");
+     $(".username").css("color","green");
+     $(".password").css("color","red");
+ } else if ( username !== correctUsername && password === correctPassword){
+     alert("wrong username");
+     $(".message").text("wrong username");
+     $(".username").css("color","red");
+     $(".password").css("color","green");
+ } else if ( username === "" || password === ""){
+     alert("Please input your username or password");
+     $(".message").text("Please input your username or password");
+ } else {
+     $(".message").text("Incorrect password and username");
+ }
+
+
+
+});
+        </script>
+    </body>
+</html>

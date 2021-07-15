@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Tic Tac Toe Project Phase III</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+<div class="section">
+        <h1>Tic Tac Toe</h1>
+
+        <div class="container">
+
+            <div id="tile1" class="tile right bottom">
+                <button id="button1">Tile 1</button>
+            </div>
+            <div id="tile2" class="tile right bottom">
+                <button id="button2">Tile 2</button>
+            </div>
+            <div id="tile3" class="tile bottom">
+                <button id="button3">Tile 3</button>
+            </div>
+            <div id="tile4" class="tile right bottom">
+                <button id="button4">Tile 4</button>
+            </div>
+            <div id="tile5" class="tile right bottom">
+                <button id="button5">Tile 5</button>
+            </div>
+            <div id="tile6" class="tile bottom">
+                <button id="button6">Tile 6</button>
+            </div>
+            <div id="tile7" class="tile right">
+                <button id="button7">Tile 7</button>
+            </div>
+            <div id="tile8" class="tile right">
+                <button id="button8">Tile 8</button>
+            </div>
+            <div id="tile9" class="tile">
+                <button id="button9">Tile 9</button>
+            </div>
+        </div>
+        
+        <button class="reset">RESET</button>
+        </div>
+        <style>
+            .container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    height:auto;
+    border:2px outset orange;
+    margin-left:24%;
+    font-size:40px;
+}
+
+.tile {
+    width: 23%;
+    padding: 5%;
+}
+
+.right {
+    border-right: 1px solid red;
+}
+
+.bottom {
+    border-bottom: 1px solid green;
+}
+.reset{
+    margin:20px;
+    padding:5px;
+    text-align:center;
+}
+.section{
+    text-align:center;
+}
+h1{
+    text-align:center;
+}
+        </style>
+        <script>
+            var player = "O";
+var turnsTaken = 0;
+var gameIsOver = "false";
+
+function changePlayers() {
+    turnsTaken++;
+    if (player === "O") {
+        player = "X";
+    } else {
+        player = "O";
+    }
+    //you write the code that goes in here
+}
+
+function performLogic(button, tile) {
+    //you write the code that goes in here
+    if (gameIsOver === "false") {
+        $(button).hide();
+        $(tile).html(player);
+        horizontal();
+        vertical();
+        diagonal();
+        changePlayers();
+        tieGame();
+    } else {}
+
+}
+
+$(".reset").click(function() {
+    location.reload();
+});
+
+function winner(tilex, tiley, tilez) {
+    var x = $(tilex).html();
+    var y = $(tiley).html();
+    var z = $(tilez).html();
+    if (x === y && x === z) {
+        console.log("Player " + player + " is the winner!");
+        $(tilex).css("color","green");
+        $(tiley).css("color","green");
+        $(tilez).css("color","green");
+        gameIsOver = "true";
+        alert("Game is over, player " + player + " wins.");  
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function tieGame() {
+    if (turnsTaken === 9) {
+        alert("Game is over, a tie");
+    }
+}
+
+function horizontal() {
+    winner("#tile1", "#tile2", "#tile3");
+    winner("#tile4", "#tile5", "#tile6");
+    winner("#tile7", "#tile8", "#tile9");
+}
+
+function vertical() {
+    winner("#tile1", "#tile4", "#tile7");
+    winner("#tile2", "#tile5", "#tile8");
+    winner("#tile3", "#tile6", "#tile9");
+}
+
+function diagonal() {
+    winner("#tile1", "#tile5", "#tile9");
+    winner("#tile3", "#tile5", "#tile7");
+}
+//in each of the click events below,
+//uncomment the function calls to performLogic
+
+
+$("#button1").click(function() {
+    performLogic("#button1", "#tile1");
+});
+
+$("#button2").click(function() {
+    performLogic("#button2", "#tile2");
+});
+
+$("#button3").click(function() {
+    performLogic("#button3", "#tile3");
+});
+
+$("#button4").click(function() {
+    performLogic("#button4", "#tile4");
+});
+
+$("#button5").click(function() {
+    performLogic("#button5", "#tile5");
+});
+
+$("#button6").click(function() {
+    performLogic("#button6", "#tile6");
+});
+
+$("#button7").click(function() {
+    performLogic("#button7", "#tile7");
+});
+
+$("#button8").click(function() {
+    performLogic("#button8", "#tile8");
+});
+
+$("#button9").click(function() {
+    performLogic("#button9", "#tile9");
+});
+        </script>
+    </body>
+
+</html>
