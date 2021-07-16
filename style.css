@@ -707,4 +707,10 @@ ul {
     .options {
         display: none;
     }
+    .citingsHeader {
+        font-size: 25px;
+    }
+    .heading {
+        font-size: 25px;
+    }
 }
