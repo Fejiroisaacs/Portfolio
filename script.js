@@ -1,6 +1,5 @@
 function startTime() {
     const today = new Date();
-    console.log(today);
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
