@@ -173,8 +173,9 @@ body {
     padding: 10px;
     border-radius: 5%;
     color: #fff;
-    font-size: 27px;
+    font-size: 23px;
     text-align: center;
+    height: fit-content;
 }
 
 .citingsHeader {
