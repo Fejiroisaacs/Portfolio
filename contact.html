@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Fejiro Isaacs </title>
-        <link rel="shortcut icon" href="https://i.imgur.com/ncxH52q.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="script.js"></script>
-        
-    </head>
 
-    <body onload="startTime()">
-        <header>
+<head>
+    <title> Fejiro Isaacs </title>
+    <link rel="shortcut icon" href="https://i.imgur.com/ncxH52q.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body onload="startTime()">
+    <header>
         <div class="header">
 
 
@@ -25,88 +26,91 @@
                 <a href="topics.html"><button class="options">Topics</button></a>
                 <a href="contact.html"><button id="active" class="options">Contact</button></a>
             </div>
-            <div> <p class="time" id="time"> </p></div>
+            <div>
+                <p class="time" id="time"> </p>
+            </div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtnMobile" onclick="closeMobileNav()">&times;</a>
                 <a href="index.html">Home</a>
                 <a href="projects.html">Projects</a>
                 <a href="topics.html">Topics</a>
                 <a href="contact.html" style="color: #E98300;">Contact</a>
-              </div>
-              <span style="font-size:30px;cursor:pointer; color: #E98300;" class="openMenuMobile"onclick="openMobileNav()">&#9776;</span>
-               
-        </div>
-        </header>
-        <div class="section" class="animate">
-            <div class="middle">
-                
-<div class="innersection">
-    <fieldset>
-    <form action="https://formspree.io/f/xzbyaebq" method="POST">
-        <label for="name">Name: </label>
-        <input class="names"type="text" name="name" placeholder="ex. John" required>
-        <label for="email">Email: </label>
-        <input class="names"type="email" name="email" placeholder="ex. John@email.com" required><br>
-        <label for="message">Subject: </label>  
-        <input class="names"type="subject" name="subject" placeholder="subject" required><br>
-        <label for="subject">Message: </label><br>
-        <textarea class="message" type="textarea" name="message" placeholder="Type your message..." required></textarea><br>
-        <!-- radio button handle --> 
+            </div>
+            <span style="font-size:30px;cursor:pointer; color: #E98300;" class="openMenuMobile" onclick="openMobileNav()">&#9776;</span>
 
-        <label class="gender" for="feature">Rate a feature:  </label>
-        <input type="radio" name="feature" value="male" id="genderMale" checked>
-        <label for="genderMale">Very Good </label>
-        <input type="radio" name="feature" value="female" id="genderFemale">
-        <label for="genderFemale">Good </label>
-        <input type="radio" name="feature" value="other" id="genderOther">
-        <label for="genderOther">Irrelevant </label>
-        <input class="names"type="text" name="feature" placeholder="feature name"><br>
-        <!-- select field handle --> 
-        <label for="rating">Rate your overall experience </label>
-        <select class="rate" name="rating">
-            
-            <option selected="true" disabled="disabled">Select an Option</option>
-            <option name="rate" value="Very Good">Very Good</option>
-            <option name="rate" value="Good">Good</option>
-            <option name="rate" value="Average">Average</option>
-            <option name="rate" value="Poor">Poor</option>
-            <option name="rate" value="Very Poor">Very Poor</option>
-        <select>
-        <button class="submitbtn" type="submit">Send</button>
-    </form>
-    <h3>Feel free to get in touch with me via email-fejiroisaac@gmail.com or text @ +1(765)-233-6358 </h3>
-    </fieldset>  
-    
         </div>
-       
+    </header>
+    <div class="section" class="animate">
+        <div class="middle">
+
+            <div class="innersection">
+                <fieldset>
+                    <form action="https://formspree.io/f/xzbyaebq" method="POST">
+                        <label for="name">Name: </label>
+                        <input class="names" type="text" name="name" placeholder="ex. John" required>
+                        <label for="email">Email: </label>
+                        <input class="names" type="email" name="email" placeholder="ex. John@email.com" required><br>
+                        <label for="message">Subject: </label>
+                        <input class="names" type="subject" name="subject" placeholder="subject" required><br>
+                        <label for="subject">Message: </label><br>
+                        <textarea class="message" type="textarea" name="message" placeholder="Type your message..." required></textarea><br>
+                        <!-- radio button handle -->
+
+                        <label class="gender" for="feature">Rate a feature: </label>
+                        <input type="radio" name="feature" value="male" id="genderMale" checked>
+                        <label for="genderMale">Very Good </label>
+                        <input type="radio" name="feature" value="female" id="genderFemale">
+                        <label for="genderFemale">Good </label>
+                        <input type="radio" name="feature" value="other" id="genderOther">
+                        <label for="genderOther">Irrelevant </label>
+                        <input class="names" type="text" name="feature" placeholder="feature name"><br>
+                        <!-- select field handle -->
+                        <label for="rating">Rate your overall experience </label>
+                        <select class="rate" name="rating">
+
+                            <option selected="true" disabled="disabled">Select an Option</option>
+                            <option name="rate" value="Very Good">Very Good</option>
+                            <option name="rate" value="Good">Good</option>
+                            <option name="rate" value="Average">Average</option>
+                            <option name="rate" value="Poor">Poor</option>
+                            <option name="rate" value="Very Poor">Very Poor</option>
+                            <select>
+                                <button class="submitbtn" type="submit">Send</button>
+                    </form>
+                    <h3>Feel free to get in touch with me via email-fejiroisaac@gmail.com or text @ +1(765)-233-6358
+                    </h3>
+                </fieldset>
+
+            </div>
+
         </div>
-        
+
     </div>
-     
-        
-        
+
+
+
     <div class="footer">
         <!-- The overlay -->
-<div id="myNav" class="overlay">
+        <div id="myNav" class="overlay">
 
-<!-- Button to close the overlay navigation -->
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-<!-- Overlay content -->
-<div class="footer-content">
-<ul>
-    <li><input  class="edit option1" id="text-color" type="text" placeholder="Enter main text color"></li>
-    <li><input class="edit" id="hover-color" type="text" placeholder="Enter text hover color"></li>
-    <li><input class="edit" id="inner-image" type="text" placeholder="Enter Image Url"></li>  
-    <li><input class="edit" id="outer-color" type="text" placeholder="Outer background color"></li>                
-    <li><input class="edit" id="fontsize" type="number" placeholder="Enter fontsize (number)"></li>  
-    <button class="change">Change</button> 
-</ul>
-  </div>        
+            <!-- Overlay content -->
+            <div class="footer-content">
+                <ul>
+                    <li><input class="edit option1" id="text-color" type="text" placeholder="Enter main text color">
+                    </li>
+                    <li><input class="edit" id="hover-color" type="text" placeholder="Enter text hover color"></li>
+                    <li><input class="edit" id="outer-color" type="text" placeholder="Outer background color"></li>
+                    <li><input class="edit" id="fontsize" type="number" placeholder="Enter fontsize (number)"></li>
+                    <button class="change">Change</button>
+                </ul>
+            </div>
 
-</div>
+        </div>
         <span class="openMenu" style="font-size:30px;cursor:pointer;color: #E98300;" onclick="openNav()">&#9776;</span>
-       
+
         <div class="footer-social">
             <a id="facebook" href="#" class="fa fa-facebook"></a>
             <a id="twitter" href="#" class="fa fa-twitter"></a>
@@ -114,10 +118,10 @@
             <a id="instagram" href="#" class="fa fa-instagram"></a>
         </div>
         <div class="footer-bottom">
-            <em> &copy;  Designed by Oghenefejiro Isaacs Anigboro  @2021 </em>
+            <em> &copy; Designed by Oghenefejiro Isaacs Anigboro @2021 </em>
         </div>
-        
-    
+
+
     </div>
 </body>
 

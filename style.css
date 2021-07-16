@@ -2,25 +2,30 @@
     display: flex;
     justify-content: space-around;
     background-color: black;
-    top:0px;
+    top: 0px;
     position: fixed;
     width: 100%;
-    left:0px;
+    left: 0px;
     padding: 0 1.5rem;
 }
-#mySidenav{
+
+#mySidenav {
     display: none;
 }
-.closebtnMobile{
+
+.closebtnMobile {
     display: none;
 }
-.sidenav{
+
+.sidenav {
     display: none;
 }
-.openMenuMobile{
+
+.openMenuMobile {
     display: none;
 }
-header{
+
+header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,8 +34,8 @@ header{
     z-index: 1000;
 }
 
-.name{
-    color:#fff;
+.name {
+    color: #fff;
     text-align: center;
     padding: 20px;
     margin-bottom: auto;
@@ -50,7 +55,7 @@ header{
     width: auto;
 }
 
-.options::after{
+.options::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -63,66 +68,69 @@ header{
     transition: transform .5s ease;
 }
 
-.options:hover::after{
+.options:hover::after {
     transform: scaleX(1);
 }
 
+
 /*Apply styles after scroll*/
-.scrolling-active{
+
+.scrolling-active {
     background-color: #fff;
-    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
 }
 
 .scrolling-active .options {
     color: #E98300;
 }
 
-.scrolling-active #active{
+.scrolling-active #active {
     background-color: whitesmoke;
     color: black;
 }
 
-.scrolling-active .header{
+.scrolling-active .header {
     background-color: transparent;
-        background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.scrolling-active .options::after{
+.scrolling-active .options::after {
     background-color: #E98300;
 }
 
-.scrolling-active .sections{
+.scrolling-active .sections {
     background-color: white;
 }
 
- body{
+body {
     background-color: black;
 }
 
-.scrolling-active .time{
-    border:2px #E98300 outset;
+.scrolling-active .time {
+    border: 2px #E98300 outset;
     color: #E98300;
 }
 
-.change{
+.change {
     background-color: transparent;
     border-style: outset;
     cursor: pointer;
     color: white;
     text-align: center;
     margin-left: 115px;
-    height:40px;
+    height: 40px;
     width: 100px;
     font-size: larger;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .logo {
     width: 70px;
     height: 50px;
     background: whitesmoke;
     position: relative;
-    animation: mymove 2s infinite;
+    animation: mymove 2s 3;
     margin: 10px;
     border-radius: 70px;
 }
@@ -131,19 +139,17 @@ header{
     from {
         left: 0%;
     }
-
     to {
         left: 10%;
     }
 }
 
-.middle{
-    background: url("background.jpg") center no-repeat;
+.middle {
+    background: url("images/background.jpg") center no-repeat;
     background-size: cover;
-
- 
 }
-.innersection{
+
+.innersection {
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -153,40 +159,42 @@ header{
 
 .section {
     background-color: #E98300;
-    padding:15px;
-    width:auto;
+    padding: 15px;
+    width: auto;
     margin-top: 70px;
     margin-right: none;
     margin-left: none;
 }
 
-.citings{
+.citings {
     background: rgba(0, 0, 0, 0.521);
     width: 50%;
     max-width: 50%;
     padding: 10px;
     border-radius: 5%;
     color: #fff;
-    font-size: large;
-}
-
-.citingsHeader{
+    font-size: 27px;
     text-align: center;
 }
 
-iframe{
+.citingsHeader {
+    text-align: center;
+}
+
+iframe {
     max-width: 100%;
     border: 2px solid #E98300;
     border-radius: 5%;
+    margin-bottom: 20px;
 }
 
 .about {
-    max-width:50%;
-    padding:20px;
+    max-width: 50%;
+    padding: 20px;
     box-shadow: grey;
     width: 50%;
     height: auto;
-    padding:30px;
+    padding: 30px;
     border: 4px solid #E98300;
     background: rgba(0, 0, 0, 0.521);
     color: #fff;
@@ -196,7 +204,7 @@ iframe{
 
 .aboutme {
     color: white;
-    text-align: center;   
+    text-align: center;
     font-size: 35px;
 }
 
@@ -211,15 +219,17 @@ iframe{
     margin-left: 5px;
 }
 
-.options:hover, .change:hover, .submitbtn:hover {
+.options:hover,
+.change:hover,
+.submitbtn:hover {
     color: black;
     background: white;
     box-shadow: 0 0 5px white;
     transition: ease-in-out .5s;
 }
 
-#active{
-    color:black;
+#active {
+    color: black;
     background: white;
 }
 
@@ -232,7 +242,7 @@ iframe{
     border-radius: 20%;
 }
 
-.photoFrame{
+.photoFrame {
     background: #E98300;
     border-radius: 2px;
     height: 300px;
@@ -244,21 +254,21 @@ iframe{
     max-height: auto;
     padding: 7px;
     position: relative;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    border:2px outset black;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border: 2px outset black;
     border-radius: 15px;
 }
 
-.photoDescription{
+.photoDescription {
     font-size: 30px;
     text-align: center;
     color: whitesmoke;
     margin-top: 2px;
 }
 
-.photoFrame:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.75), 0 10px 10px rgba(0,0,0,0.75);
+.photoFrame:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.75), 0 10px 10px rgba(0, 0, 0, 0.75);
     transition: ease-in-out .5s;
     margin-top: 5px;
 }
@@ -267,51 +277,50 @@ iframe{
     color: white;
     margin: 20px;
     padding: 5px;
-    border:2px white outset;
+    border: 2px white outset;
 }
 
-.footer{
-    background:black;
-    color:white;
-    height:100px;
-    position:relative;
-    padding:35px;
+.footer {
+    background: black;
+    color: white;
+    height: 100px;
+    position: relative;
+    padding: 35px;
     width: auto;
 }
 
-.footer .footer-bottom{
-    background:black;
-    color:#E98300;
-    height:20px;
-    width:100%;
-    text-align:center;
-    position:absolute;
-    bottom:0px;
-    left:0px;
-    padding-top:15px;
+.footer .footer-bottom {
+    background: black;
+    color: #E98300;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 15px;
 }
 
 html {
     min-height: 100%;
-
 }
 
-.footer-content{
-      margin:5px;
-      padding:5px;
-      display: flex;
-      justify-content: center;
-      margin-top: -15px;
-      margin-bottom: auto;
+.footer-content {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-bottom: auto;
 }
 
-.footer-social{
+.footer-social {
     margin: auto;
     font-size: 34px;
     text-align: center;
 }
 
-.fa{
+.fa {
     text-align: center;
     color: whitesmoke;
     text-decoration: none;
@@ -320,72 +329,83 @@ html {
     padding: 10px;
     border-radius: 15px;
 }
-.edit{
+
+.edit {
     display: block;
-    border:outset;
+    border: outset;
     border-radius: 10%;
-    margin: 35px;
+    margin: 45px;
     padding: 15px;
     margin-top: 20px;
     font-size: larger;
 }
- #facebook:hover{
+
+#facebook:hover {
     background: #3b5998;
     margin-top: 5px;
-    transition:  ease-out .5s;
+    transition: ease-out .5s;
 }
- #instagram:hover{
-    background:linear-gradient(to top right, orange, red, purple);
+
+#instagram:hover {
+    background: linear-gradient(to top right, orange, red, purple);
     margin-top: 5px;
     transition: ease-in-out .5s;
 }
- #twitter:hover{
+
+#twitter:hover {
     background: #4c82f5;
     margin-top: 5px;
     transition: ease-in-out .5s;
 }
- #whatsapp:hover{
+
+#whatsapp:hover {
     background: #1ce45f;
     margin-top: 5px;
     transition: ease-in-out .5s;
-}   
+}
+
 .animate {
     animation: fade-in 1s ease-in-out both;
-  }
-  @keyframes animate {
+}
+
+@keyframes animate {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  .heading{
-      color:#fff;
-      text-align: center;
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
     font-size: 45px;
-      margin-top: auto;
-  }
-  .centralize{
+    margin-top: auto;
+}
+
+.centralize {
     padding-top: 9%;
 }
 
-fieldset{
+fieldset {
     width: 50%;
     height: auto;
-    padding:30px;
+    padding: 30px;
     border: 4px solid #E98300;
     background: rgba(0, 0, 0, 0.521);
     color: #fff;
     border-radius: 5%;
     font-size: large;
 }
-fieldset:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.75), 0 10px 10px rgba(0,0,0,0.75);
+
+fieldset:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.75), 0 10px 10px rgba(0, 0, 0, 0.75);
     transition: ease-in-out .5s;
     margin-top: 5px;
 }
-.submitbtn{
+
+.submitbtn {
     background-color: transparent;
     color: #fff;
     margin: 10px;
@@ -394,12 +414,14 @@ fieldset:hover{
     cursor: pointer;
     position: relative;
 }
-.names{
+
+.names {
     height: 30px;
     margin: 10px;
     width: auto;
 }
-.message{
+
+.message {
     padding: 15px 5px;
     width: 100%;
     border: 2px solid black;
@@ -413,92 +435,132 @@ fieldset:hover{
     resize: vertical;
     max-height: 250px;
 }
-.rate{
-    width:22%;
+
+.rate {
+    width: 22%;
     margin: 5px;
     border-radius: 5%;
 }
+
 .gender {
     margin-top: 20px;
-
 }
-::placeholder{
-    color:grey;
+
+::placeholder {
+    color: grey;
     font-weight: bolder;
 }
+
+
 /*code from w3schools*/
+
+
 /* The Overlay (background) */
+
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
     position: absolute;
     top: 55px;
     right: 45px;
     font-size: 50px;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-  /* End of copied and edited code from w3schools*/
-  .openMenu{
-      margin-left: -30px;
-  }
+}
 
-ul{
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* End of copied and edited code from w3schools*/
+
+.openMenu {
+    margin-left: -30px;
+}
+
+ul {
     list-style-type: none;
 }
-.option1{
-    margin-top: 100px;
+
+.option1 {
+    margin-top: 250px;
 }
+
+
 /*Code copied from weschools- how to make a side bar, partly edited by me*/
-.openMenuMobile{
+
+.openMenuMobile {
     margin-top: 13px;
     margin-right: 20px;
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -510,61 +572,67 @@ ul{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
-  
-  .sidenav a {
+}
+
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #fff;
     display: block;
     transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 200px) and (max-width: 1000px) {
-    .rate{
+    .rate {
         width: 150px;
     }
-    fieldset{
+    fieldset {
         width: 80%;
         padding: 20px;
         margin-left: -10px;
     }
-    .gender{
+    .gender {
         font-size: medium;
     }
-    #mySidenav{
+    #mySidenav {
         display: block;
     }
-    .closebtnMobile{
+    .closebtnMobile {
         display: block;
     }
-    .sidenav{
+    .sidenav {
         display: block;
     }
-    .openMenuMobile{
+    .openMenuMobile {
         display: block;
     }
-    
-    .about{
-        min-width:80%;
+    .about {
+        min-width: 80%;
         margin: auto;
         display: block;
         margin-left: auto;
@@ -574,8 +642,8 @@ ul{
         margin-bottom: 15px;
         position: relative;
     }
-    iframe{
-        min-width:80%;
+    iframe {
+        min-width: 80%;
         margin: auto;
         display: block;
         margin-left: auto;
@@ -585,8 +653,8 @@ ul{
         margin-bottom: 15px;
         position: relative;
     }
-    .citings{
-        min-width:80%;
+    .citings {
+        min-width: 80%;
         margin: auto;
         display: block;
         margin-left: auto;
@@ -596,8 +664,8 @@ ul{
         position: relative;
         min-height: auto;
     }
-    .photoFrame{
-        min-width:auto;
+    .photoFrame {
+        min-width: auto;
         position: relative;
         margin: auto;
         display: block;
@@ -607,38 +675,35 @@ ul{
         height: auto;
         margin-top: 15px;
     }
-    .photoDescription{
+    .photoDescription {
         font-size: medium;
     }
-    .aboutme{
+    .aboutme {
         font-size: large;
     }
-    .aboutext{
+    .aboutext {
         font-size: medium;
     }
-    .name{
+    .name {
         font-size: medium;
     }
-    .slide{
+    .slide {
         min-width: auto;
         margin: auto;
         min-height: auto;
         max-height: auto;
     }
-    .innersection{
+    .innersection {
         display: block;
     }
-    .menuoptions{
+    .menuoptions {
         display: none;
     }
     .middle {
-            background-image: url("mobileBackground.jpg");
-            background-size: cover;     
+        background-image: url("images/mobileBackground.jpg");
+        background-size: cover;
     }
-        .options{
-            
-            display: none;
-        }
-        
-        
+    .options {
+        display: none;
     }
+}
