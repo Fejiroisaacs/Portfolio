@@ -145,7 +145,7 @@ body {
 }
 
 .middle {
-    background: url("background.jpg") center no-repeat;
+    background: url("images/background.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -700,7 +700,7 @@ ul {
         display: none;
     }
     .middle {
-        background-image: url("mobileBackground.jpg");
+        background-image: url("images/mobileBackground.jpg");
         background-size: cover;
     }
     .options {
