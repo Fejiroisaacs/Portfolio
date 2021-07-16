@@ -189,10 +189,10 @@ iframe {
 }
 
 .about {
-    max-width: 50%;
+    max-width: 60%;
     padding: 20px;
     box-shadow: grey;
-    width: 50%;
+    width: 60%;
     height: auto;
     padding: 30px;
     border: 4px solid #E98300;
@@ -261,7 +261,7 @@ iframe {
 }
 
 .photoDescription {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     color: whitesmoke;
     margin-top: 2px;
@@ -550,7 +550,7 @@ ul {
 }
 
 .option1 {
-    margin-top: 220px;
+    margin-top: 130px;
 }
 
 
